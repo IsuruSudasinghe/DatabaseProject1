@@ -21,13 +21,23 @@
 				font-weight:bold;
 			}
 			
+			label.format3 {
+				padding: 50px 0px 30px 0px;
+				display: inline-block;
+				font-weight:bold;
+			}
+			
+			label.format4 {
+				padding: 0px 0px 30px 0px;
+				display: inline-block;
+				font-weight:bold;
+			}
+			
 			div.align1 {
 				text-align: center;
 			}
 			
-			div.align1 {
-				padding: center;
-			}
+			
 			
 			.col-25 {
 				float: left;
@@ -35,6 +45,12 @@
 				margin-top: 6px;
 			}
 
+			.col-15 {
+				float: left;
+				width: 15%;
+				margin-top: 6px;
+			}
+			
 			.col-75 {
 				float: left;
 				width: 75%;
@@ -102,7 +118,7 @@
 	
 			<div class="row" >
 				<div class="col-25 align1"  >
-					<label class="format1" for="items">Extra Items: </label>
+					<label class="format4" for="items">Extra Items: </label>
 				</div>
 				<div class="col-75" >
 						<input type="checkbox" name="Item1" value="Cap">Cap </br>
@@ -116,19 +132,19 @@
 			
 			<div class="row">
 				<div class="col-25 align1" >
-					<label class="format1" for="deliver">Deliever To:</label>
+					<label class="format3" for="deliver">Deliever To:</label>
 				</div>
 				
 				<div class="col-75" >
-					<label class="format2" for="fname">First Name:</label>
+					<label class="format2" style="width:85px;" for="fname">First Name:</label>
 						<input type="text" name="firstname" ></br>
-					<label class="format2" for="lname">Last Name:</label> 
+					<label class="format2" style="width:85px;" for="lname">Last Name:</label> 
 						<input type="text" name="lastname" ></br>
-					<label class="format2" for="Address1">Address1:</label>
+					<label class="format2" style="width:85px;" for="Address1">Address1:</label>
 						<input type="text" name="addres1"></br>
-					<label class="format2" for="Address2">Address2:</label>
+					<label class="format2" style="width:85px;" for="Address2">Address2:</label>
 						<input type="text" name="addres2"></br>
-					<label class="format2" for="Address3">Address3:</label>
+					<label class="format2" style="width:85px;" for="Address3">Address3:</label>
 						<input type="text" name="addres3"></br>
 				</div>
 			</div>
@@ -138,9 +154,11 @@
 					<label class="format1" for="comments">Your Comments:
 				</div>
 				
-				<div class="col-75" >			
-					<input type="text" name="comments"></br>
-					<input type="submit" value="Order Now"><br>
+				<div class="col-75" >
+					<div style="margin-bottom: 6px">
+					<input type="text" name="comments" ></br>
+					</div>
+					<input type="submit" value="Order Now" style=" ; "><br>
 				</div>
 			</div>
 	
