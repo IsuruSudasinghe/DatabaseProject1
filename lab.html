@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<title>
+			T sirts
+		</title>
 		<style type="text/css">
 			#type1 {
 				font-family: "Times New Roman", Times, serif;
@@ -33,15 +36,22 @@
 				font-weight:bold;
 			}
 			
+			label.format5 {
+				padding: 50px 0px 30px 0px;
+				display: inline-block;
+				font-weight:bold;
+			}
+			
 			div.align1 {
 				text-align: center;
 			}
 			
 			
 			
+			
 			.col-25 {
 				float: left;
-				width: 25%;
+				width: 30%;
 				margin-top: 6px;
 			}
 
@@ -53,7 +63,7 @@
 			
 			.col-75 {
 				float: left;
-				width: 75%;
+				width: 70%;
 				margin-top: 6px;
 			}
 			
@@ -75,95 +85,99 @@
 	</head>
 
 	<body>
-		<h1 id="type1" >Buy T-shirt Online</h1>
-		<h2>Fill out the form below and click "Order Now" to order</h2>
+		<div style="width: 650px; margin-right:auto; margin-left:auto; border:1px solid #000; padding: 0px 0px 20px 20px;">
+			<h1 id="type1" >Buy T-shirt Online</h1>
+			<h2>Fill out the form below and click "Order Now" to order</h2>
 		
-		
-		<form name="form1" action="/action_page.php" method="get">
-			<div class="row">
-				<div class="col-25 align1" >
-					<label class="format1" for="search">Search by order number: </label> 
-				</div>	
-				<div class="col-75" >
-								<input type="text" name="ordernumber" > 
-								<input type="submit" value="Search"><br>
-				</div>
-			</div>
-			
-			<div class="row">
-				<div class="col-25 align1" >
-					<label class="format1" for="size">Chose your size:</label>
-				</div>
-				<div class="col-75" >
-							<input type="radio" name="size" value="Small">Small
-							<input type="radio" name="size" value="Medium">Medium
-							<input type="radio" name="size" value="Large">Large </br>
-				</div>
-			</div>
-			
-			<div class="row">
-				<div class="col-25 align1" >
-					<label class="format1" for="color">Chose Your color:</label> 
-				</div>
-				<div class="col-75" >
-							<select name ="colors">
-								<option value="Red"> red </option>
-								<option value="Green"> Green </option>
-								<option value="Blue"> Blue </option>
-								<option value="Yellow"> Yellow </option>
-								<option value="Orange"> Orange </option>
-							</select> </br>
-				</div>
-			</div>
 	
-			<div class="row" >
-				<div class="col-25 align1"  >
-					<label class="format4" for="items">Extra Items: </label>
-				</div>
-				<div class="col-75" >
-						<input type="checkbox" name="Item1" value="Cap">Cap </br>
-						<input type="checkbox" name="Item2" value="WristBand">Wrist Band </br>
-						
-				</div>
-			</div>
-			
-			
-			
-			
-			<div class="row">
-				<div class="col-25 align1" >
-					<label class="format3" for="deliver">Deliever To:</label>
-				</div>
-				
-				<div class="col-75" >
-					<label class="format2" style="width:85px;" for="fname">First Name:</label>
-						<input type="text" name="firstname" ></br>
-					<label class="format2" style="width:85px;" for="lname">Last Name:</label> 
-						<input type="text" name="lastname" ></br>
-					<label class="format2" style="width:85px;" for="Address1">Address1:</label>
-						<input type="text" name="addres1"></br>
-					<label class="format2" style="width:85px;" for="Address2">Address2:</label>
-						<input type="text" name="addres2"></br>
-					<label class="format2" style="width:85px;" for="Address3">Address3:</label>
-						<input type="text" name="addres3"></br>
-				</div>
-			</div>
-
-			<div class="row">
-				<div class="col-25 align1" >
-					<label class="format1" for="comments">Your Comments:
-				</div>
-				
-				<div class="col-75" >
-					<div style="margin-bottom: 6px">
-					<input type="text" name="comments" ></br>
+	
+			<form name="form1" action="/action_page.php" method="get">
+				<div class="row">
+					<div class="col-25 align1" >
+						<label class="format1" for="search">Search by order number: </label> 
+					</div>	
+					<div class="col-75" >
+									<input type="text" name="ordernumber" > 
+									<input type="submit" value="Search"><br>
 					</div>
-					<input type="submit" value="Order Now" style=" ; "><br>
 				</div>
-			</div>
+			
+				<div class="row">
+					<div class="col-25 align1" >
+						<label class="format1" for="size">Chose your size:</label>
+					</div>
+					<div class="col-75" >
+								<input type="radio" name="size" value="Small">Small
+								<input type="radio" name="size" value="Medium">Medium
+								<input type="radio" name="size" value="Large">Large </br>
+					</div>
+				</div>
+			
+				<div class="row">
+					<div class="col-25 align1" >
+						<label class="format1" for="color">Chose Your color:</label> 
+					</div>
+					<div class="col-75" >
+								<select name ="colors">
+									<option value="Red"> red </option>
+									<option value="Green"> Green </option>
+									<option value="Blue"> Blue </option>
+									<option value="Yellow"> Yellow </option>
+									<option value="Orange"> Orange </option>
+								</select> </br>
+					</div>
+				</div>
+	
+				<div class="row" >
+					<div class="col-25 align1"  >
+						<label class="format4" for="items">Extra Items: </label>
+					</div>
+					<div class="col-75" >
+							<input type="checkbox" name="Item1" value="Cap">Cap </br>
+							<input type="checkbox" name="Item2" value="WristBand">Wrist Band </br>
+						
+					</div>
+				</div>
+			
+			
+			
+			
+				<div class="row">
+					<div class="col-25 align1" >
+						<label class="format3" for="deliver">Deliever To:</label>
+					</div>
+				
+					<div class="col-75" >
+						<label class="format2" style="width:85px;" for="fname">First Name:</label>
+							<input type="text" name="firstname" ></br>
+						<label class="format2" style="width:85px;" for="lname">Last Name:</label> 
+							<input type="text" name="lastname" ></br>
+						<label class="format2" style="width:85px;" for="Address1">Address1:</label>
+							<input type="text" name="addres1"></br>
+						<label class="format2" style="width:85px;" for="Address2">Address2:</label>
+							<input type="text" name="addres2"></br>
+						<label class="format2" style="width:85px;" for="Address3">Address3:</label>
+							<input type="text" name="addres3"></br>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-25 align1" >
+						<label class="format5" for="comments">Your Comments:
+					</div>
+				
+					<div class="col-75" >
+						<div style="margin-bottom: 6px">
+							<textarea type="text" style="height: 150px; width: 400px" name="comments" ></textarea>
+						</div>
+						<input type="submit" value="Order Now" ><br>
+					</div>
+				</div>
 	
 					
-		</form>
+			</form>
+		
+		</div>
 		 	
 
 	</body>
